@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<style type="text/css">
+
+		#container {
+			max-width: 720px;
+			height: 400px;
+			overflow: hidden;
+			display: block;
+			margin: 20px auto;
+		}
+
+		img {
+			max-width: 720px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<img src="">
+	</div>
+
+	<h1 onclick="change()">change</h1>
+
+	<script type="text/javascript">
+		var current = 0;
+		var prev = 0;
+		var next = 1;
+
+		var images = ['1.jpg','2.jpg','4.jpg','5.jpg'];
+
+		$('img').attr("src","img/"+images[current]);
+
+		function change() {
+			$('img').fadeTo(300,0.1);
+			prev = current;
+			current = next;
+			if(current == images.length - 1) {
+				next = 0;
+			} 
+
+			else next++;
+			setTimeout(function() {
+				$('img').attr("src","img/"+images[current]);
+			},300);
+
+			$('img').fadeTo(300,1);
+		}
+
+		setInterval(change,5000);
+
+		
+	</script>
+</body>
+</html>
