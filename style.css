@@ -1,0 +1,131 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	background: #2a2a2a;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/*SOCIAL MEDIA*/
+
+#social-media {
+	max-height: 40px;
+	width: 100%;
+	padding: 5px 0;
+	background: #2a2a2a;
+}
+
+#email {
+	color: #dddddd;
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+}
+
+#social-media ul {
+	display: inline-block;
+	float: right;
+	margin: 0;
+}
+
+#social-media ul li {
+	display: inline-block;
+	margin: 0 3px;
+	max-width: 30px;
+}
+
+.social-icons {
+	max-width: 100%;
+}
+
+
+/*HEADER*/
+
+#header{
+	height: 100vh;
+	background: silver;
+}
+
+
+
+/*I AM A*/
+
+#i-am .col-sm-4 {
+	padding: 0 7%;
+}
+
+#i-am img {
+	display: block;
+	width: 60%;
+	margin: 20px auto;
+}
+
+#i-am h1 {
+	margin: 30px auto;
+	padding: 0;
+	color: #dddddd;
+}
+
+#i-am h3 {
+	text-align: center;
+	color: #ffffff;
+	margin-top: 35px;
+}
+
+#i-am p {
+	text-align: center;
+	color: #aaaaaa;
+}
+
+
+/*MY SKILLS*/
+
+#my-skills {
+	background: #ffffff;
+}
+
+#skills-box-container {
+	display: block;
+	text-align: center;
+}
+
+#skills-box {
+	text-align: center;
+	background: red;
+}
+
+.skills {
+	font-size: 1.5em;
+	margin-bottom: 5px;
+}
+
+#skills-box-container img {
+	width: 40px;
+	max-width: 50px;
+}
+
+#skills-box-container>.row {
+	margin-bottom: 10px;
+}
+
+.stars {
+	text-align: center;
+}
+
+
+
+
+/*MY WORKS*/
+
+#my-works h1 {
+	text-align: center;
+	margin: 30px auto;
+	padding: 0;
+	color: #dddddd;
+}
